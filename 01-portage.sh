@@ -34,7 +34,7 @@ else
 fi
 
 # non special - upgrade everything
-emerge --columns --ask --backtrack=100 --update --changed-use --deep --newuse --with-bdeps=y --autounmask-backtrack=y @world
+emerge --columns --ask --backtrack=100 --update --changed-use --deep --newuse --with-bdeps=y --autounmask-backtrack=y --verbose-conflicts @world
 emerge --ask @preserved-rebuild
 
 emerge --ask --depclean
