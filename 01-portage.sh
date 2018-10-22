@@ -10,7 +10,7 @@ else
 fi
 
 # Show outdated packages
-if [ /usr/portage/metadata/timestamp.chk -nt ~/emerge-outdated.log ]; then
+if [[ ( /usr/portage/metadata/timestamp.chk -nt ~/emerge-outdated.log ) || ( ! -e  ~/emerge-outdated.log ) ]]; then
     emerge --columns --pretend  --backtrack=100  --update --changed-use --deep --newuse --with-bdeps=y --autounmask-backtrack=y @world 2>&1 | tee ~/emerge-outdated.log
 fi
 
