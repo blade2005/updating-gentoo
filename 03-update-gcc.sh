@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-if [ $(grep -c sys-devel/gcc ~/emerge-outdated.log) -gt 0 ];then
+if [ $(grep -c 'sys-devel/gcc ' ~/emerge-outdated.log) -gt 0 ];then
     emerge --ask --update sys-devel/gcc
     gcc-config -l
     read -p "Which gcc should we switch to?" new_gcc
