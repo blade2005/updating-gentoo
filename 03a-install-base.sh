@@ -105,6 +105,7 @@ sys-kernel/vanilla-sources
 media-gfx/imagemagick
 media-video/mpv
 app-editors/neovim
+sys-kernel/genkernel
 EOF
 
 emerge @blade-recommended
