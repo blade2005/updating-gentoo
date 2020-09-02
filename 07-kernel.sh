@@ -16,7 +16,7 @@ make modules_install && \
 make install && \
 genkernel \
     --compress-initramfs \
-    --compress-initramfs-type=lzop \
+    --compress-initramfs-type=lz4 \
     --symlink \
     --lvm \
     ${mdadm_args} \
