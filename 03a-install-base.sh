@@ -21,7 +21,7 @@ emerge gentoolkit
 
 test -d /etc/portage/sets || mkdir /etc/portage/sets
 
-cat << 'EOF' /etc/portage/sets/blade-recommended
+cat << 'EOF' >> /etc/portage/sets/blade-recommended
 app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/perl-cleaner
